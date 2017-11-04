@@ -52,6 +52,11 @@ h1, h3 {
 
 }
 
+.navbar-brand:focus, .navbar-brand:hover  {
+  color: #fff;
+  background-color: #4aaaa5;
+}
+
 .collapse.navbar-collapse {
   height: 90px;
   float: right;
@@ -66,11 +71,15 @@ h1, h3 {
 .bs-example-navbar-collapse-1 {
   height: 90px;
   height: 100%;
-  position: fixed;
   font-weight: 700;
   line-height: 50px;
   margin: 40px;
 }
+
+.navbar-fixed-top {
+  position: fixed;
+}
+  
 
 .navbar-default .navbar-brand {
   color: #fff;
@@ -91,26 +100,39 @@ h1, h3 {
   margin-top: 20px;
 }
 
+.container {
+  position: relative;
+}
+
 #main-container {
   float: left;
   width: 100%;
   max-width: 650px;
   padding: 30px;
   margin: 0 0 40px;
-  background: #fff;
-  border: 1px solid #ddd;
+ 
+  /**/
 
 }
 
 #panel.connect {
-  padding: 30px;
-  float: right;
-  width: 100%;
-  max-width: 270px;
-  padding: 30px;
-  margin-bottom: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.btn-default {
+  border: none;
+}
+
+#github, #linkedin, #stack {
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#main-section {
+  margin-top: 110px;
+  margin-bottom: 110px;
 }
 
 .social {
@@ -121,3 +143,123 @@ h1, h3 {
 .panel-default>.panel-heading {
   background-color: #fff;
 }
+
+/*<-- header -->*/
+#footer {
+  text-align: center;
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+  position: static;
+  width: 100%;
+}
+
+#contacts {
+  padding: 10px;
+}
+
+#message {
+  height: 300px;
+}
+
+#submit {
+  background-color: #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+  
+  .container {
+    width: 760px;
+  }
+
+  #content {
+    width: 60%;
+  }
+  
+  #photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 740px;
+  }
+
+  #content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    clear: right;
+    max-width: 100%;
+  }
+
+  #photo {
+    width: 50%;
+    height: auto;
+  }
+  
+}
+
+@media screen and (max-width: 640px) {
+
+  .navbar-fixed-top {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      background-color: #fff;
+      margin-top: 0px;
+  }
+
+  .navbar {
+    position: static;
+  }
+
+  #footer {
+
+  }
+  .container {
+    width: 95%;
+  }
+
+  #main-container {
+    width: 95%;
+      padding-top: 20px;
+  }
+
+  .navbar-brand  {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    clear: right;
+    margin-top: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+
+  nav a {
+    width: 30%;
+  }
+
+  #photo {
+    width: 100%;
+    height: auto;
+  }
