@@ -37,13 +37,30 @@ h1, h3 {
 
 }
 
+h4 {
+  position: absolute;
+  bottom: 20px;
+  width: 88%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+  color: #fff;
+  background-color: #4aaaa5;
+}
+
+
 /*<-- header -->*/
 
 
 .navbar-brand {
   color: #fff;
   background-color: #4aaaa5;
-  height: 90px;=
+  height: 90px;
   font-weight: 700;
   left: 14%;
   font-size: 30px;
